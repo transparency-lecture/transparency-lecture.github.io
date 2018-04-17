@@ -12,7 +12,7 @@ It makes it easy for us to focus only on the **content**, not on the layout. Thi
 in an intuitive format ([markdown](https://en.wikipedia.org/wiki/Markdown)),
 which you might recognize if you used a Jupyter Notebook before.
 
-To see the source code for this page, visit out [github repository](). No
+To see the source code for this page, visit out [github repository](https://raw.githubusercontent.com/transparency-lecture/transparency-lecture.github.io/master/_docs/index.md). No
 big deal, right? Here are some tips to get your started.
 
 ## Writing content

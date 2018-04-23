@@ -36,11 +36,14 @@ import numpy as np
 a = np.arange(12)
 ```
 
-### Latex?
+### Latex
 
-It doesn't seem to work yet: $v = m s^{-1}$
+Formulas works fine:
 
 $$v = m s^{-1}$$
+
+Inline also: $$v = m s^{-1}$$
+
 
 ### More
 

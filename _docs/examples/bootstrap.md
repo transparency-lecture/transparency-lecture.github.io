@@ -1,8 +1,9 @@
 ---
-title: Bootstrap Features
+title: Some HTML Features
 permalink: /docs/bootstrap/
 ---
 
+Some fancy things you might want to use (or not).
 
 ## Buttons
 <p>

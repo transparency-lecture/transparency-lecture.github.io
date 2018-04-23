@@ -9,19 +9,24 @@ redirect_from: /docs/index.html
 This website is generated using a static website generator called [Jekyll](https://jekyllrb.com/).
 
 It makes it easy for us to focus only on the **content**, not on the layout. This page for example is written
-in an intuitive format ([markdown](https://en.wikipedia.org/wiki/Markdown)),
+in the intuitive ([markdown](https://en.wikipedia.org/wiki/Markdown)) format,
 which you might recognize if you used a Jupyter Notebook before.
 
-To see the source code for this page, visit out [github repository](https://raw.githubusercontent.com/transparency-lecture/transparency-lecture.github.io/master/_docs/index.md). No
-big deal, right? Here are some tips to get your started.
+To see the source code for this page, visit our
+[github repository](https://github.com/transparency-lecture/transparency-lecture.github.io/blob/master/_docs/index.md).
+No big deal, right? Here are some tips to get you started.
 
-## Writing content
+## Writing new content
+
+### Example
+
+
 
 ### Docs
 
 Docs are [collections](https://jekyllrb.com/docs/collections/) of pages stored under `_docs` folder. To create a new page:
 
-**1.** Create a new Markdown as `_docs/my-page.md` and write [front matter](https://jekyllrb.com/docs/frontmatter/) & content such as:
+**1.** Create a new Markdown as `_docs/my-page.md` (or a subfolder) and write [front matter](https://jekyllrb.com/docs/frontmatter/) & content such as:
 
 ```
 ---

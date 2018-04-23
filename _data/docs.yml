@@ -1,9 +1,10 @@
 - title: Getting Started
   docs:
   - home
-
-- title: Examples
-  docs:
+  - example-post
   - cheatsheet
-  - font-awesome
   - bootstrap
+
+- title: Lectures
+  docs:
+  - links

@@ -1,9 +1,11 @@
 ---
-title: Markdown Cheatsheet
+title: A Markdown Cheatsheet
 permalink: /docs/cheatsheet/
 ---
 
-From [adam-p/markdown-here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+This is a list of markdown commands you can use to write content.
+
+Obtained from [adam-p/markdown-here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 ##### Table of Contents  
 [Headers](#headers)  

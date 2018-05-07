@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Field excursion at the Patscherkofel ski area - Relocation of a station"
-date:   2018-04-06 22:00:00
+date:   2018-04-06 21:00:00
 author: Zora Schirmeister, Lilian Schuster
 ---
 

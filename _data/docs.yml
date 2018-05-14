@@ -8,3 +8,7 @@
 - title: Lectures
   docs:
   - links
+
+- title: Code
+  docs:
+  - notebooks

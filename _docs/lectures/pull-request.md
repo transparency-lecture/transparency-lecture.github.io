@@ -64,4 +64,48 @@ indicate that you are up-to-date with the original repository.
 
 #### Step 4: create a new branch
 
-On your fork's website (see above), click on
+On your fork's website (see above), click on the "branch" button and type a
+new branch name (see example below). The tool should suggest you to create a new
+branch:
+
+[![image unavailable](/img/docs/pull-request/branch.png)](/img/docs/pull-request/branch.png)
+
+From now on you should always select this new branch before making further
+changes.
+
+#### Step 5: adding / editing files
+
+In this new branch, you can navigate to the folder or the file you like to edit.
+The buttons to edit/add new files should be there for you:
+
+[![image unavailable](/img/docs/pull-request/newfile.png)](/img/docs/pull-request/newfile.png)
+
+After adding/editing your file(s), github should propose you to make a **commit**.
+This is exactly what you should do! Make sure you select the
+``Commit directly to the BRANCH-NAME`` option.
+
+Repeat step 5 as many times as necessary (you can do as many commits as
+necessary).
+
+#### Step 6: submitting a pull-request (PR)
+
+Now that you have added all your changes, github should suggest you to create
+a pull request. The homepage of your branch should look like:
+
+[![image unavailable](/img/docs/pull-request/pr.png)](/img/docs/pull-request/pr.png)
+
+Click on "Compare & pull-request", add an informative message about what your
+changes are, and submit the PR!
+
+#### Step 7: review process
+
+During the review process, you might be asked to make further changes. If it is
+so, repeat step 5 as many times as necessary. Make sure that you are
+indeed working in the correct branch. After a new commit, the pull-request will
+be updated automatically.
+
+#### What to do after my PR was accepted/merged?
+
+You're done! The branch you have used can safely be deleted/ignored.
+**If you'd like to make new changes at a latter stage, restart at step 3 and
+create a new branch from master**.

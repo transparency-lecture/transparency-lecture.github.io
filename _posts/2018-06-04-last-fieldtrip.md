@@ -9,15 +9,15 @@ With the beginning of May there was no snow anymore at the slopes of the Patsche
 stations on the 9th of May 2018. By car we drove up to the Patscher Alm and walked the rest to the stations. 
 We had to hurry up because there was a big thunderstorm coming. 
 
-![image not found](/img/posts/last-fieldtrip/3.jpg)
+![image not found](/img/posts/last-fieldtrip/3.JPG)
 
 No snow anymore..
 
-![image not found](/img/posts/last-fieldtrip/1.jpg)
+![image not found](/img/posts/last-fieldtrip/1.JPG)
 
 We realized that one of our stations was almost located in a little stream.
 
-![image not found](/img/posts/last-fieldtrip/2.jpg)
+![image not found](/img/posts/last-fieldtrip/2.JPG)
 
 The thunderstorm was coming closer so we were working really fast. But at the end we stayed dry :)
 

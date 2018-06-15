@@ -8,3 +8,8 @@
 - title: Lectures
   docs:
   - links
+  - pull-request
+
+- title: Code
+  docs:
+  - notebooks

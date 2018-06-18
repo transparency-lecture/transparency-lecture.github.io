@@ -20,8 +20,6 @@ No big deal, right? Here are some tips to get you started.
 
 ### Example
 
-
-
 ### Docs
 
 Docs are [collections](https://jekyllrb.com/docs/collections/) of pages stored under `_docs` folder. To create a new page:

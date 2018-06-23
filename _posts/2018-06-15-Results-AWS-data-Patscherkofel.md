@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Impact of artificial snow on the albedo - Results of the AWS data on Patscherkofel"
+title:  "WIP: Impact of artificial snow on the albedo - Results of the AWS data on Patscherkofel"
 date:   2018-06-15 12:00:00
 author: Zora Schirmeister, Lilian Schuster
 ---

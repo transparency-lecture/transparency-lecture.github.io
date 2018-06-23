@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Introduction"
+title:  "WIP: Introduction"
 date:   2018-06-16 19:00:00
 author: Lina Horn, Anna Güttersberger
 ---

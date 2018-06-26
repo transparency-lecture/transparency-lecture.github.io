@@ -1,15 +1,17 @@
 ---
-layout: post
-title:  "WIP: EcoBot Albedo Measurements"
-date:   2018-06-26 10:00:00
-author: Thomas Muschinski, Lena Müller
+title:  "EcoBot Albedo Measurements"
+permalink: /docs/2018-ecobot/
 ---
+
+**Authors**: Thomas Muschinski, Lena Müller
 
 **Peer-review:** *not peer-reviewed yet!*
 
-[Code used to generate these plots](/docs/code/EcoBot/)
+**Code used to generate these plots**: [direct view](/docs/code/EcoBot/),
+[R Markdown download](https://github.com/transparency-lecture/transparency-lecture.github.io/blob/master/_docs/code/EcoBot/EcoBot_TransparencyCommunication.Rmd)
 
-[Code used to generate these plots (R Markdown)](https://github.com/transparency-lecture/transparency-lecture.github.io/blob/master/_docs/code/EcoBot/EcoBot_TransparencyCommunication.Rmd)
+**Data used to generate these plots**:
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1264686.svg)](https://doi.org/10.5281/zenodo.1264686)
 
 
 # Introduction

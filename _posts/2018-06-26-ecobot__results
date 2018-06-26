@@ -7,6 +7,10 @@ author: Thomas Muschinski, Lena Müller
 
 **Peer-review:** *not peer-reviewed yet!*
 
+
+[Code used to generate these plots](https://github.com/transparency-lecture/transparency-lecture.github.io/blob/master/_docs/code/EcoBot_TransparencyCommunication.rmd)
+
+
 #Introduction
 
 The purpose of our experiment was to determine the magnitudes of differences in surface albedo for snow and grass. This is of interest since we wish to determine the influence of artifical snowmaking on the energy budget. This effect is expected to be most pronounced during the spring, when slopes where snowmaking occured during the winter remain snow covered longer than natural slopes. If there is a significant difference in the albedo of snow and grass (as we would expect) then different amounts of energy in the form of solar radiation will be absorbed by the natural and 'artificial' slopes. In the following sections we investigate these differences.</font>
@@ -24,8 +28,7 @@ After returning from the field, the GPS and time stamped data were downloaded fr
 ##Study site
 The study site at the base of Patscherkofel with the four measurement points (bottom) and the reference point (top) for green grass (see section 2.3).
 
-![Fig. 1: study site at the base of Patscherkofl](ecobot_measurements.png)
-
+[![](/img/posts/ecobot/ecobot_measurements.png)]
 
 #Results
 

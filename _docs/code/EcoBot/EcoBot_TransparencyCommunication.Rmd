@@ -20,7 +20,7 @@ The purpose of our experiment was to determine the magnitudes of differences in 
 
 #Material & Methods
 
-On a cloudless spring day (20.04.2018), we visited the lower slopes of the Patscherkofel ski resort with the Eco Bot mobile measuring system which contains a four component net radiometer and NDVI calculator. The slopes were mainly free of snow, but some snowfields remained. From the four component radiometer we can compare incoming and outgoing solar radiation to calculate our albedo estimates. 
+On a cloudless spring day (20.04.2018), we visited the lower slopes of the Patscherkofel ski resort with the Eco Bot mobile measuring system which contains a four component net radiometer and NDVI calculator. The slopes were mainly free of snow, but some snowfields remained. From the four component radiometer we can compare incoming and outgoing solar radiation to calculate our albedo estimates.
 The NDVI value is a comparison of near infrared reflectance and red reflectance. Higher NDVI values indicate greater plant health and can help us differentiate between lush green grass and brown ground more recently exposed due to snow melt (which may have different albedo characteristics). In order to avoid relying on the ability to differentiate the grass surfaces by NDVI in the data analysis, we also categorized our albedo grass measurements into green and brown grass during the measurements.
 
 We took measurements for three different surface types (green grass, brown grass, snow) with two radiometer orientations (leveled or slope-parallel). For each surface type/orientation combination we performed three measurements. At the end, we additionally measured radiation and NDVI for the very green grass of the adjacent golf course. The two radiometer orientations chosen for measurement-triplets were first slope parallel and then normal to Earth?s gravitational field. For flat terrain these measurement styles would be equivalent, but since ski slopes can be quite steep, we also wanted to quantify the slope effect. Additionally, it was important to wait some time after changing location to allow the sensors to adapt to the new conditions. The sensors have differing response times, that may in fact be quite short, but we decided to wait a conservative time of one minute before each triplet.
@@ -44,9 +44,9 @@ The study site at the base of Patscherkofel with the four measurement points (bo
 #setwd("C:\\Users\\c7071013\\Dropbox\\VU_Transparency&Communication_SS2018\\FeedbacksHomework\\RStudio\\")
 #data.path =  "C:\\Users\\c7071013\\Dropbox\\VU_Transparency&Communication_SS2018\\Data\\"
 
-setwd("C:\\Users\\Lena Müller\\Dropbox\\Uni\\4_Semester\\Transparency_and_communication_in_earth_science\\Ecobot\\")
+setwd("C:\\Users\\Lena MÃ¼ller\\Dropbox\\Uni\\4_Semester\\Transparency_and_communication_in_earth_science\\Ecobot\\")
 
-data.path = "C:\\Users\\Lena Müller\\Dropbox\\Uni\\4_Semester\\Transparency_and_communication_in_earth_science\\Ecobot\\"
+data.path = "C:\\Users\\Lena MÃ¼ller\\Dropbox\\Uni\\4_Semester\\Transparency_and_communication_in_earth_science\\Ecobot\\"
 
 
 
@@ -70,7 +70,7 @@ dat$plot_names[dat$plot ==1] <- "snow"
 dat$plot_names[dat$plot ==2] <- "brownish grass"
 dat$plot_names[dat$plot ==3] <- "green grass"
 
- 
+
 #bocplot for the albedo values of snow,brown, green
 ggplot(dat, aes (x=plot_names, y=albedo, group=plot, color=plot_names)) +
   geom_boxplot() +
@@ -108,16 +108,16 @@ knitr::opts_chunk$set(echo = TRUE)
 # Testing of significant differences in albedo of the three populations.
 
 
-s = dat$albedo[dat$plot == 1] 
+s = dat$albedo[dat$plot == 1]
 
 #albedo values over snow
 
-b = dat$albedo[dat$plot == 2] 
+b = dat$albedo[dat$plot == 2]
 
 #albedo values over brown grass
 
 
-g = dat$albedo[dat$plot == 3] 
+g = dat$albedo[dat$plot == 3]
 #albedo values over green grass
 
 
@@ -170,18 +170,18 @@ ggplot(dat, aes (x=orient_plot_names, y=albedo, group=orient_plot, color=orient_
 
 
 
-  
-  
+
+
 ```
 
 Horizontally measured, albedo values are overall smaller for snow, brownish and green grass, respectively.
 
 ##NDVI & Albedo
 
-The Normalized Difference Vegetation Index provides information about the state of living vegetation whereby higher values indicate greener grass 
+The Normalized Difference Vegetation Index provides information about the state of living vegetation whereby higher values indicate greener grass
 (https://de.wikipedia.org/wiki/Normalized_Difference_Vegetation_Index).
 
-NDVI is based on the reflection of green grass in the red and near infrared wavelength range. 
+NDVI is based on the reflection of green grass in the red and near infrared wavelength range.
 
 $$NDVI = \frac{near infrared - red}{near infraread+red}   $$
 
@@ -191,7 +191,7 @@ $$NDVI = \frac{near infrared - red}{near infraread+red}   $$
 knitr::opts_chunk$set(echo = TRUE)
 
 
-#plot albedo of no-snow measurements (plot = 2 and 3) as a function of NDVI in order to study effects of gradual differences 
+#plot albedo of no-snow measurements (plot = 2 and 3) as a function of NDVI in order to study effects of gradual differences
 #in greeness on albedo
 
 
@@ -214,12 +214,12 @@ As expected, NDVI is higher for green grass and the reference ('very' green gras
 
 Since green grass has slightly higher albedo values than brownish grass (See Fig. 2) and higher NDVI value, we would have expected higher albedo values with higher NDVI.
 
-Due to high variability within the brownish grass, NDVI and albedo values reveal no apparent relation. 
+Due to high variability within the brownish grass, NDVI and albedo values reveal no apparent relation.
 
 
 
 
-## Derive Surface temperature from outgoing LW 
+## Derive Surface temperature from outgoing LW
 From our 4-component radiometer we can not only investigate the short wave components of radiation (from the sun), but also the longer wavelengths emitted by significantly cooler bodies (such as the earth's surface or clouds). From the Stefan-Boltzmann Law, we can estimate the surface temperature assuming the measured outgoing longwave radiation is exactly equal to the radiant emittance of the surface below the sensor. Furthermore we assume the temperature of the radiating body remains relatively constant over depths of similar magnitude to the optical depth.
 
 The emissivity of snow and soil are both close to unity. Thus, we assume an emissivity of one in the following calculations and this means our derived surface temperatures are a lower limit.
@@ -239,14 +239,14 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 sb_const = 5.67*10**(-8) # in W/m^2/K^4
-dat$surftemp = (dat$LWlo/sb_const) ** (1/4) - 273.15 
+dat$surftemp = (dat$LWlo/sb_const) ** (1/4) - 273.15
 # surface temperature in Celsius.
 
 dat$MinLW=dat$LWlo*0.95-5
-dat$surftemp_min= (dat$MinLW/sb_const) ** (1/4) - 273.15 
+dat$surftemp_min= (dat$MinLW/sb_const) ** (1/4) - 273.15
 
 dat$MaxLW=dat$LWlo*1.05+5
-dat$surftemp_max= (dat$MaxLW/sb_const) ** (1/4) - 273.15 
+dat$surftemp_max= (dat$MaxLW/sb_const) ** (1/4) - 273.15
 
 
 
@@ -255,8 +255,8 @@ ggplot(dat, aes (x=plot_names, y=surftemp, group=plot, color=plot_names)) +
   ylim(0, 23)+
   scale_color_manual(values=c("brown", "green", "blue")) +
   theme_bw() +# white background
-  labs(x="",y="surface temperature [°C]", caption="Fig. 5: variability of surface temperature for snow, brownish grass and green grass")+
-  
+  labs(x="",y="surface temperature [Â°C]", caption="Fig. 5: variability of surface temperature for snow, brownish grass and green grass")+
+
 theme(legend.title=element_blank(), legend.position="none") # no title, legend bottom
 ```
 
@@ -265,7 +265,7 @@ Our snow surface temperature estimates are above freezing, which is something we
 
 ####Calibration uncertainty & offset
 
-Due to a Calibration Uncertainty of ± 5 % and a Zero Offset B value of less than 5 W/m$^2$ (https://www.apogeeinstruments.com/net-radiometer/), possible maximum and minimum surface temperatures were calculated:
+Due to a Calibration Uncertainty of pm 5 % and a Zero Offset B value of less than 5 W/m$^2$ (https://www.apogeeinstruments.com/net-radiometer/), possible maximum and minimum surface temperatures were calculated:
 
 
 ```{r, message =FALSE, warning =FALSE}
@@ -279,8 +279,8 @@ ggplot(dat, aes (x=plot_names, y=surftemp_min, group=plot, color=plot_names)) +
   scale_color_manual(values=c("brown", "green", "blue")) +
   labs(caption="Fig. 6: variability of surface temperature for snow, brownish grass and green grass for minimum surface temperature" )+
   theme_bw() +# white background
-  labs(x="",y="surface temperature [°C]")+
-  
+  labs(x="",y="surface temperature [Â°C]")+
+
 theme(legend.title=element_blank(), legend.position="none") # no title, legend bottom
 
 #boxplot for maximum surface temperature
@@ -290,8 +290,8 @@ ggplot(dat, aes (x=plot_names, y=surftemp_max, group=plot, color=plot_names)) +
   scale_color_manual(values=c("brown", "green", "blue")) +
   labs(caption="Fig. 7: variability of surface temperature for snow, brownish grass and green grass for maximum surface temperature" )+
   theme_bw() +# white background
-  labs(x="",y="surface temperature [°C]")+
-  
+  labs(x="",y="surface temperature [Â°C]")+
+
 theme(legend.title=element_blank(), legend.position="none") # no title, legend bottom
 
 
@@ -301,7 +301,7 @@ theme(legend.title=element_blank(), legend.position="none") # no title, legend b
 
 
 
-# 
+#
 
 
 
@@ -352,8 +352,8 @@ It seems like the influence of the human observer can explain our  unexpectedly 
 
 #### Water film
 
-Another explanation for the higher surface temperature of snow could be a thin water film formed by snowmelt. 
-This liquid water could influence the estimated surface temperature to varying magnitudes, depending on the relationship between the film thickness and the optical depth of water for thermal wavelengths. 
+Another explanation for the higher surface temperature of snow could be a thin water film formed by snowmelt.
+This liquid water could influence the estimated surface temperature to varying magnitudes, depending on the relationship between the film thickness and the optical depth of water for thermal wavelengths.
 
 
 
@@ -373,8 +373,8 @@ In the case where $LW_{in} = LW_{out}$, our assumption works perfectly. The outg
 In the case where $LW_{in} = 0$, no longwave radiation is reflected at the surface and we need to correct our outgoing measurement with the proper surface emissivity.
 
 
-For our case, the two approaches reveal the difference of approximately 1.5°C.
-Assuming an emissivity of 1 gives the lowes surface temperature estimate. 
+For our case, the two approaches reveal the difference of approximately 1.5Â°C.
+Assuming an emissivity of 1 gives the lowes surface temperature estimate.
 
 
 
@@ -401,4 +401,4 @@ But our estimated maximum value is at an Austrian scale and there are hardly man
 
 Then we have a radiative forcing estimate of artifical snowmaking for the whole earth of approximately 1/500 W/m$^2$ which seems more reasonable when compared to carbon dioxide.
 
-This estimate neglects any effects apart from direct influences on the short-wave budget. Snowpack additionally emits less longwave radiation in the spring melt season compared to grassland. This would counter the albedo effect and cause less energy loss for the surface. Turbulent heat fluxes can also be suppressed due to more stable stratification above the snow surface. Therefore our estimate of the radiative forcing should be seen as an absolute maximum order-of-magnitude estimate. 
+This estimate neglects any effects apart from direct influences on the short-wave budget. Snowpack additionally emits less longwave radiation in the spring melt season compared to grassland. This would counter the albedo effect and cause less energy loss for the surface. Turbulent heat fluxes can also be suppressed due to more stable stratification above the snow surface. Therefore our estimate of the radiative forcing should be seen as an absolute maximum order-of-magnitude estimate.

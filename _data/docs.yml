@@ -1,15 +1,15 @@
-- title: Getting Started
+- title: SS2018 Course
   docs:
-  - home
+  - 2018-introduction
+  - 2018-Neustift
+  - 2018-ecobot
+  - 2018-AWS-data-Patscherkofel
+
+- title: Website how-to
+  docs:
+  - getting-started
   - example-post
   - cheatsheet
   - bootstrap
-
-- title: Lectures
-  docs:
-  - links
   - pull-request
-
-- title: Code
-  docs:
-  - notebooks
+  - links

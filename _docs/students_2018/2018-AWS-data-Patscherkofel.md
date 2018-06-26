@@ -1,15 +1,19 @@
 ---
-layout: post
-title:  "WIP: Impact of artificial snow on the albedo - Results of the AWS data on Patscherkofel"
-date:   2018-06-15 12:00:00
-author: Zora Schirmeister, Lilian Schuster
+title:  "Impact of artificial snow on the albedo - Results of the AWS data on Patscherkofel"
+permalink: /docs/2018-AWS-data-Patscherkofel/
 ---
+
+**Authors**: Zora Schirmeister, Lilian Schuster
 
 **Peer-review:** Thomas Muschinski
 
 [Code used to generate these plots](https://github.com/transparency-lecture/transparency-lecture.github.io/blob/master/_docs/code/patscherkofel_prefinalversion_lowmemory.ipynb)
 
 [Full version of this post with in-depth analysis](/docs/code/patscherkofel_aws/)
+
+**Data used to generate these plots**:
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1264686.svg)](https://doi.org/10.5281/zenodo.1264686)
+
 
 Two automatic weather stations (AWS) were mounted in the skiing area of Patscherkofel on 23rd of
 March 2018 to investigate whether artificial snow has an impact on the change of reflectivity of

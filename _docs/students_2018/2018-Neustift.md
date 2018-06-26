@@ -1,9 +1,9 @@
 ---
-layout: post
-title:  "WIP: Analysis of the Albedo in transition between snow and no snow in Neustift"
-date:   2018-06-11 11:00:00
-author: Felix Thiemann, Moritz Trichtl
+title:  "Analysis of the Albedo in transition between snow and no snow in Neustift"
+permalink: /docs/2018-Neustift/
 ---
+
+**Authors**: Felix Thiemann, Moritz Trichtl
 
 **Peer-review:** *not peer-reviewed yet!*
 

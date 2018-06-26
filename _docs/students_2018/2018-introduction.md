@@ -1,9 +1,9 @@
 ---
-layout: post
-title:  "WIP: Introduction"
-date:   2018-06-16 19:00:00
-author: Lina Horn, Anna Güttersberger
+title:  "Introduction"
+permalink: /docs/2018-introduction/
 ---
+
+**Authors:** Lina Horn, Anna Güttersberger
 
 **Peer-review:** *not peer-reviewed yet!*
 

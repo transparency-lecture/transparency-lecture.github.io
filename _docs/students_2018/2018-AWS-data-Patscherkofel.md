@@ -5,7 +5,7 @@ permalink: /docs/2018-AWS-data-Patscherkofel/
 
 **Authors**: Zora Schirmeister, Lilian Schuster
 
-**Peer-review:** Thomas Muschinski
+**Peer-review:** Thomas Muschinski, Felix Thiemann, Moritz Trichtl
 
 [Code used to generate these plots](https://github.com/transparency-lecture/transparency-lecture.github.io/blob/master/_docs/code/patscherkofel_prefinalversion_lowmemory.ipynb)
 
@@ -17,8 +17,9 @@ permalink: /docs/2018-AWS-data-Patscherkofel/
 
 Two automatic weather stations (AWS) were mounted in the skiing area of Patscherkofel on 23rd of
 March 2018 to investigate whether artificial snow has an impact on the change of reflectivity of
-shortwave radiation and consequently an impact on the surface energy budget. For this purpose two CNR4 Net
-Radiometer were installed, which measure the incoming and outgoing longwave and shortwave radiation.
+shortwave radiation and consequently an impact on the surface energy budget. For this purpose two [CNR4 Net
+Radiometer](https://www.campbellsci.de/cnr4) were installed, which measure the incoming and outgoing
+longwave and shortwave radiation.
 First, both were placed in natural terrain on snow next to a ski slope. On the 6th of April 2018,
 one station was moved onto the ski slope. The measurement period was from 23rd of March until the 9th
 of May. It has to be mentioned that there was a huge amount of natural snow in this winter and we do
@@ -29,11 +30,12 @@ effect actually is.
 
 Due to some battery problems the examination of the data starts with the 28th of March. In figure 1
 the incoming and outgoing shortwave radiation of both stations are plotted. The shortwave radiation
-follows the typical daily course we would expect. For every time step the albedo was calculated by
+follows the typical daily cycle we would expect. For every time step the albedo was calculated by
 dividing the outgoing by the incoming shortwave radiation. Some albedo values were higher than 1 which
 is physically impossible. One source of error are disturbances of the upper sensor, which was sometimes
 covered by snow. Additionally, the lower sensor receives more shortwave radiation in the morning when
-the sun has a low elevation angle and radiates directly into the lower sensor. These values are excluded from our analysis. As these
+the sun has a low elevation angle and radiates directly into the lower sensor. These values are excluded
+from our analysis. As these
 instant albedo calculations for each data point are very sensitive to measurement errors, e.g. extreme
 peak by a single measurement, it is better to analyse the daily albedo. For the following it was
 calculated by summing the outgoing and incoming radiation over each day and dividing these two
@@ -50,11 +52,13 @@ exceeds 0.7 until the 1st of April, then metamorphosis changes the properties of
 decreases to values between 0.55 and 0.7 for a period of 15 days. The variations in this time span can be
 explained by the change between new snowfall (4th, 8th and 12th of April), which leads to higher albedos,
 and warm temperatures that induce transformation processes in the snow.  When melting occurs, a layer of
-water covers the snow, which has a lower albedo than snow. (Mote, 2008) Afterwards, from 16th of April on,
+water covers the snow, which has a lower albedo than snow (Mote, 2008).
+
+Afterwards, from 16th of April on,
 the albedo decreases continuously until the snow is completely melted. A period of hot days in
 comparison to the days before started. The albedo reaches values below 0.2, which belong to snow-free
-surfaces (according to the analysis of the Neustift data described in (LINK to Neustift article #####)). The photos of the
-dismounting show a muddy surface for Patscherkofel 1 and pasture for Patscherkofel 2.
+surfaces (according to the [analysis of the Neustift data](/docs/2018-Neustift/)).
+The photos of the dismounting show a muddy surface for Patscherkofel 1 and pasture for Patscherkofel 2.
 
 [![image unavailable](/img/posts/results_AWS/albedo_final.png)](/img/posts/results_AWS/Patscherkofel_plotly_dailyalbedo_figure2.html)
 *Click on the image for an interactive version!*
@@ -72,7 +76,7 @@ technical problems have to be considered, which could occur due to the relocatio
 between the sites. The station that is located on the ski slope reaches its minimum albedo two days later than
 the other one. There are a few aspects to be taken into account. The snow on the ski slope should be denser
 due to the skiers that compress it, and in addition due to the heavy snowcats that distribute extra artificial
-snow on it. So the decrease of the snow height by melting is expected to be slower compared to the natural
+snow on it. Therefore the decrease of the snow height by melting is expected to be slower compared to the natural
 site since more energy per square meter is needed to melt the same height of the snow. There
 were also a few skiers in the area of natural snow, but their impact is considered to be little. Further the
 albedo is lower on Patscherkofel 1 (natural site), therefore more energy is absorbed by the snow, which is
@@ -93,11 +97,11 @@ interruptions.
 
 ## Conclusion
 
-With our measurement we detected a difference in the behavior of natural and artificial snow. On the one hand
-the ski slope’s snow showed a slightly higher albedo until the continuous melting period started on 16th of
-April (between 1 % to 11 %). On the other hand, the site of natural snow was snow-free sooner, but this
-difference is only two days. Probably, this is due to the lower albedo value at the beginning of the
-continuous melting period.
+With our measurement we detected a difference in the behavior of the snow on the skiing slope compared to the
+nearly undisturbed snow beside it. This difference could be caused by the use of artifical snow. The ski slope’s
+snow showed a slightly higher albedo until the continuous melting period started on 16th of April (between 1 % to 11 %).
+The site of natural snow was snow-free sooner, but only by two days. Probably, this is due to the lower albedo value at
+the beginning of the continuous melting period.
 
 The main problem is, that we do not know the mixing ratio of natural and artificial snow on the ski slopes,
 and therefore an evalutation of the influence of artificial snow on the energy budget is impossible. A winter with
